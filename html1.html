@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Photo</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Верхнее меню */
+        header {
+            height: 70px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 55px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #159b84;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #333;
+        }
+
+        /* Большое изображение */
+        .hero {
+            height: 620px;
+            background-image:
+                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url("photo.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Основной текст */
+        .content {
+            background: #f3f5f7;
+            text-align: center;
+            padding: 43px 8% 80px;
+        }
+
+        .content h1 {
+            font-size: 20px;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 22px;
+            letter-spacing: 1.5px;
+            margin-bottom: 22px;
+        }
+
+        /* Кнопка */
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 16px 37px;
+            background: #159f87;
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #117a69;
+        }
+
+        /* Нижняя часть сайта */
+        footer {
+            height: 90px;
+            background: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 8%;
+        }
+
+        footer p {
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+
+        /* Адаптация для телефона */
+        @media (max-width: 600px) {
+            nav {
+                gap: 18px;
+            }
+
+            nav a {
+                font-size: 11px;
+                letter-spacing: 1px;
+            }
+
+            .hero {
+                height: 400px;
+            }
+
+            .content {
+                padding: 35px 5%;
+            }
+
+            .content h1 {
+                font-size: 17px;
+            }
+
+            .content p {
+                font-size: 12px;
+            }
+
+            footer {
+                justify-content: center;
+            }
+
+            footer p {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Верхнее меню -->
+    <header>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">PHOTOAPP</a>
+            <a href="#">DESIGN</a>
+            <a href="#">DOWNLOAD</a>
+        </nav>
+    </header>
+
+    <!-- Фоновое изображение -->
+    <section class="hero"></section>
+
+    <!-- Основной текст -->
+    <section class="content">
+
+        <h1>RAPPRESENT YOUR LIFE WITH A SIMPLE PHOTO</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Etiam velit est, ullamcorper a vestibulum eu, pulvinar ut orci.
+            Donec gravida orci non suscipit consequat. Suspendisse ut dui
+            sed tortor ultrices tempus. Phasellus dictum lectus ex, ut
+            placerat massa pharetra at.
+        </p>
+
+        <p>
+            Vestibulum varius pretium mattis. Aliquam vulputate maximus est,
+            quis euismod elit sodales placerat. Proin pretium arcu a odio
+            consectetur, nec vestibulum nisi venenatis. Nulla eleifend nisi
+            vel pretium aliquam. Cras ornare elementum vehicula. Curabitur
+            at hendrerit nisl. Donec ligula mauris, commodo non diam et.
+        </p>
+
+        <a href="#" class="button">GET STARTED</a>
+
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <p>Copyright by phototime - all right reserved</p>
+    </footer>
+
+</body>
+</html>
